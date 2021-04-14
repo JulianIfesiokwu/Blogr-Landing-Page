@@ -18,11 +18,11 @@
 
             <!-- navigation and Logo -->
             <nav>
-                <a href="#"><img src="./assets/logo.svg" alt="Blogr logo"></a>
+                <a href="#" id="logo"><img src="./assets/logo.svg" alt="Blogr logo"></a>
                 <div class="dropdown">
-                    <button class="dropdown-btn">Product
+                    <a class="dropdown-btn">Product
                         <img src="./assets/icon-arrow-light.svg" alt="">
-                    </button>
+                    </a>
                     <div class="dropdown-content">
                         <a href="#">Overview</a>
                         <a href="#">Pricing</a>
@@ -32,9 +32,9 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="dropdown-btn">Company
+                    <a class="dropdown-btn">Company
                         <img src="./assets/icon-arrow-light.svg" alt="">
-                    </button>
+                    </a>
                     <div class="dropdown-content">
                         <a href="#">About</a>
                         <a href="#">Team</a>
@@ -43,24 +43,32 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="dropdown-btn">Connect
+                    <a class="dropdown-btn">Connect
                         <img src="./assets/icon-arrow-light.svg" alt="">
-                    </button>
+                    </a>
                     <div class="dropdown-content">
                         <a href="#">Contact</a>
                         <a href="#">Newsletter</a>
                         <a href="#">LinkedIn</a>
                     </div>
                 </div>
-                <a href="#">Login</a>
-                <a href="#">Sign Up</a>
+                <div class="login">
+                    <a href="#" id="login-link">Login</a>
+                    <a href="#" id="sign-up-link">Sign Up</a>
+                </div>
+                
             </nav>
 
             <!-- heading -->
             <h1>A modern publishing platform</h1>
             <p>Grow your audience and build your online brand</p>
-            <button>Start for Free</button>
-            <button>Learn More</button>
+
+            <div class="cta">
+                <button id="start">Start for Free</button>
+                <button id="learn">Learn More</button>
+
+            </div>
+            
         </div>
 
         <!-- Design -->

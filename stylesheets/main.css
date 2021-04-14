@@ -25,7 +25,129 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Overpass', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Overpass', sans-serif;
+    font-family: 'Ubuntu', sans-serif; */
 }
 
+/* General styling for buttons */
+button {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--white);
+    outline: none;
+    cursor: pointer;
+}
+
+/* General styling for links */
+a {
+    font-family: 'Overpass', sans-serif;
+}
+.landing {
+    background-image: url(../assets/bg-pattern-intro.svg);
+    background-color: var(--background-very-light-red);
+    color: var(--white);
+    padding: 3rem 6rem 3rem 6rem;
+    border-radius: 0 0 0 100px;
+    margin-bottom: 4rem;
+}
+
+nav {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+#logo {
+    margin-right: 3rem;
+}
+
+.dropdown {
+    display: inline-block;
+    margin-right: 2rem;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 2rem 2rem 0rem 2rem;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: var(--very-dark-blue);
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.dropdown-content a:hover {
+    font-weight: 600;
+}
+
+/* display dropdown content on hover */
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.login {
+    margin-left: auto;
+}
+
+#login-link {
+    color: var(--white);
+    padding: 1rem;
+    margin-right: 1rem;
+    border: 1px solid var(--background-very-light-red);
+    text-decoration: none;
+}
+
+#sign-up-link, #start {
+    font-weight: 600;
+    color: var(--primary-light-red);
+    background-color: var(--white);
+    padding: 1rem 2rem;
+    border: 1px solid var(--white);
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+h1,
+p {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Overpass', sans-serif;
+}
+
+h1 {    
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.landing p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+#learn {
+    color: var(--white);
+    margin-left: 1rem;
+    font-weight: 600;
+    background-color: var(--background-very-light-red);
+    padding: 1rem 2rem;
+    border: 1px solid var(--white);
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+
+.design {
+    text-align: center;
+}

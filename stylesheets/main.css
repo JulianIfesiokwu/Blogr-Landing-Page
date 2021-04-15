@@ -115,8 +115,8 @@ nav {
     text-decoration: none;
 }
 
-h1,
-p {
+.landing h1,
+.landing p {
     text-align: center;
     margin-bottom: 1rem;
     font-family: 'Overpass', sans-serif;
@@ -192,4 +192,71 @@ h3 {
 .design img {
     object-fit: cover;
     overflow: hidden;
+}
+
+.infrastructure {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-image: url('../assets/bg-pattern-circles.svg');
+    background-color: var(--very-dark-desaturated-blue);
+    background-repeat: no-repeat;
+    border-radius: 0 100px 0 100px;
+    margin-bottom: 4rem;
+}
+
+.infrastructure-details {
+    padding: 3rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    padding-right: 6rem;
+}
+
+.details-image {
+    flex: 1;
+}
+
+.details-details {
+    flex: 1;
+    line-height: 2;
+    text-align: start;
+    margin-bottom: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--very-dark-black-blue);
+    border-radius: 0 100px 0 0;
+    padding: 5rem 2rem 2rem 5rem;
+}
+
+.column {
+    margin-right: 15rem;
+    color: var(--white);
+}
+
+.column p {
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+li:hover {
+    text-decoration: underline;
 }

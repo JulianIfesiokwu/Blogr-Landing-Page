@@ -43,13 +43,14 @@ button {
 a {
     font-family: 'Overpass', sans-serif;
 }
+
 .landing {
     background-image: url(../assets/bg-pattern-intro.svg);
     background-color: var(--background-very-light-red);
     color: var(--white);
     padding: 3rem 6rem 3rem 6rem;
     border-radius: 0 0 0 100px;
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
 }
 
 nav {
@@ -150,4 +151,45 @@ h1 {
 
 .design {
     text-align: center;
+    padding-left: 6rem;
+}
+
+.design-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
+
+h2,
+h3 {
+    font-size: 2rem;
+    font-family: 'Overpass', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.design-details {
+    flex: 55%;
+    margin-top: 10rem;
+}
+
+.design-details p {
+    line-height: 2;
+    text-align: start;
+    margin-bottom: 2rem;
+}
+
+.design-image {
+    flex: 60%;
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 5rem;
+    left: 10rem;
+    overflow: hidden;
+}
+
+.design img {
+    object-fit: cover;
+    overflow: hidden;
 }

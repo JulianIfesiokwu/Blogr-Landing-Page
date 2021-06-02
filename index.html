@@ -7,6 +7,7 @@
     <link rel="icon" href="./assets/favicon-32x32.png">
     <title>Blogr Landing Page</title>
     <link rel="stylesheet" href="./stylesheets/main.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -18,7 +19,7 @@
 
             <!-- navigation and Logo -->
             <nav>
-                <a href="#" id="logo"><img src="./assets/logo.svg" alt="Blogr logo"></a>
+                <a href="#" id="logo"><img src="./assets/logo.svg" alt="Blogr-logo"></a>
                 <div class="dropdown">
                     <a class="dropdown-btn">Product
                         <img src="./assets/icon-arrow-light.svg" alt="">
@@ -56,12 +57,21 @@
                     <a href="#" id="login-link">Login</a>
                     <a href="#" id="sign-up-link">Sign Up</a>
                 </div>
+
+                <!-- Hamburger Menu -->
+                <div class="hamburger-menu">
+                    <img src="./assets/icon-hamburger.svg" alt="">
+                </div>
+                
                 
             </nav>
 
             <!-- heading -->
-            <h1>A modern publishing platform</h1>
-            <p>Grow your audience and build your online brand</p>
+
+            <div class="heading-message">
+                <h1>A modern publishing platform</h1>
+                <p>Grow your audience and build your online brand</p>
+            </div>            
 
             <div class="cta">
                 <button id="start">Start for Free</button>
@@ -86,7 +96,11 @@
                     
                 </div>
                 <div class="design-image">
-                    <img src="./assets/illustration-editor-desktop.svg" alt="">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="./assets/illustration-editor-mobile.svg">
+                        <source media="(min-width: 600px)" srcset="./assets/illustration-editor-desktop.svg">
+                        <img src="./assets/illustration-editor-desktop.svg" alt="illustration-editor">
+                    </picture>
                 </div>
             </div>
 
@@ -94,23 +108,27 @@
 
         <!-- Infrastructure -->
         <div class="infrastructure">
-                <div class="infrastructure-image">
-                    <img src="./assets/illustration-phones.svg" alt="">
+            
+            <div class="infrastructure-details">
+                <h2>State of the Art Infrastructure</h2>
+                <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+                    This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+            </div>
 
-                </div>
-
-                <div class="infrastructure-details">
-                    <h2>State of the Art Infrastructure</h2>
-                    <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-                        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
-                </div>
+            <div class="infrastructure-image">
+                <img src="./assets/illustration-phones.svg" alt="illustration-phones">
+            </div>
             
         </div>
 
         <!-- Details -->
         <div class="details">
             <div class="details-image">
-                <img src="./assets/illustration-laptop-desktop.svg" alt="">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="./assets/illustration-laptop-mobile.svg">
+                    <source media="(min-width: 600px)" srcset="./assets/illustration-laptop-desktop.svg">
+                    <img src="./assets/illustration-laptop-desktop.svg" alt="illustration-laptop">
+                </picture>
 
             </div>
 
@@ -128,7 +146,7 @@
         <!-- Footer -->
         <footer>
             <div class="column">
-                <a href="#"><img src="./assets/logo.svg" alt="Blogr logo"></a>
+                <a href="#"><img src="./assets/logo.svg" alt="Blogr-logo"></a>
             </div>
             <div class="column">
                 <p>Product</p>
@@ -161,5 +179,7 @@
         </footer>
     </div>
     
+
+    <script src="https://use.fontawesome.com/2dcda51fba.js"></script>
 </body>
 </html>

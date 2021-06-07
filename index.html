@@ -7,7 +7,8 @@
     <link rel="icon" href="./assets/favicon-32x32.png">
     <title>Blogr Landing Page</title>
     <link rel="stylesheet" href="./stylesheets/main.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" media='screen and (min-width: 601px) and (max-width: 738px)' href="./stylesheets/tablet.css"/>
+    <link rel="stylesheet" media='screen and (min-width: 140px) and (max-width: 600px)' href="./stylesheets/mobile.css"/>
 </head>
 <body>
 
@@ -59,8 +60,9 @@
                 </div>
 
                 <!-- Hamburger Menu -->
-                <div class="hamburger-menu">
-                    <img src="./assets/icon-hamburger.svg" alt="">
+                <div class="mobile-hamburger">
+                    <img src="./assets/icon-hamburger.svg" class="hamburger-menu" alt="icon-hamburger">
+                    <img src="./assets/icon-close.svg" class="close-menu" alt="icon-close">
                 </div>
                 
                 
@@ -178,8 +180,54 @@
 
         </footer>
     </div>
-    
 
-    <script src="https://use.fontawesome.com/2dcda51fba.js"></script>
+
+    <!-- Hamburger Modal -->
+    <div id="myModal" class="modal">
+        <div class="hamburger-modal">
+            <div class="modal-content">
+                <a class="dropdown-btn">Product
+                    <img src="./assets/icon-arrow-dark.svg" alt="icon-arrow-light">
+                    <img src="./assets/" alt="">
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">Overview</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Marketplace</a>
+                    <a href="#">Features</a>
+                    <a href="#">Integrations</a>
+                </div>
+            </div>
+            <div class="modal-content">
+                <a class="dropdown-btn">Company
+                    <img src="./assets/icon-arrow-dark.svg" alt="icon-arrow-light">
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">About</a>
+                    <a href="#">Team</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                </div>
+            </div>
+            <div class="modal-content">
+                <a class="dropdown-btn">Connect
+                    <img src="./assets/icon-arrow-dark.svg" alt="">
+                </a>
+                <div class="dropdown-content">icon-arrow-light
+                    <a href="#">Contact</a>
+                    <a href="#">Newsletter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+            <div class="login-sign-up">
+                <a href="#" id="login-link">Login</a>
+                <a href="#" id="sign-up-link">Sign Up</a>
+            </div>
+    
+        </div>
+        
+    </div>    
+
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

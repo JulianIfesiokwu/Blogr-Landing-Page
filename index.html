@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/favicon-32x32.png">
     <title>Blogr Landing Page</title>
-    <link rel="stylesheet" href="./stylesheets/main.css">
-    <link rel="stylesheet" media='screen and (min-width: 601px) and (max-width: 738px)' href="./stylesheets/tablet.css"/>
+    <link rel="stylesheet" media='screen and (min-width: 601px)' href="./stylesheets/main.css">
     <link rel="stylesheet" media='screen and (min-width: 140px) and (max-width: 600px)' href="./stylesheets/mobile.css"/>
 </head>
 <body>
@@ -23,7 +22,7 @@
                 <a href="#" id="logo"><img src="./assets/logo.svg" alt="Blogr-logo"></a>
                 <div class="dropdown">
                     <a class="dropdown-btn">Product
-                        <img src="./assets/icon-arrow-light.svg" alt="">
+                        <img class="icon" src="./assets/icon-arrow-light.svg" alt="icon-arrow-light">
                     </a>
                     <div class="dropdown-content">
                         <a href="#">Overview</a>
@@ -35,7 +34,7 @@
                 </div>
                 <div class="dropdown">
                     <a class="dropdown-btn">Company
-                        <img src="./assets/icon-arrow-light.svg" alt="">
+                        <img class="icon" src="./assets/icon-arrow-light.svg" alt="icon-arrow-light">
                     </a>
                     <div class="dropdown-content">
                         <a href="#">About</a>
@@ -46,7 +45,7 @@
                 </div>
                 <div class="dropdown">
                     <a class="dropdown-btn">Connect
-                        <img src="./assets/icon-arrow-light.svg" alt="">
+                        <img class="icon" src="./assets/icon-arrow-light.svg" alt="icon-arrow-light">
                     </a>
                     <div class="dropdown-content">
                         <a href="#">Contact</a>
@@ -94,13 +93,13 @@
                         change the looks of a blog.</p>
                     <h3>Robust content management</h3>
                     <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-                        by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
-                    
+                        by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>                    
                 </div>
+
                 <div class="design-image">
                     <picture>
                         <source media="(max-width: 600px)" srcset="./assets/illustration-editor-mobile.svg">
-                        <source media="(min-width: 600px)" srcset="./assets/illustration-editor-desktop.svg">
+                        <source media="(min-width: 601px)" srcset="./assets/illustration-editor-desktop.svg">
                         <img src="./assets/illustration-editor-desktop.svg" alt="illustration-editor">
                     </picture>
                 </div>
@@ -147,10 +146,10 @@
 
         <!-- Footer -->
         <footer>
-            <div class="column">
-                <a href="#"><img src="./assets/logo.svg" alt="Blogr-logo"></a>
+            <div class="column-logo">
+                <a href="#"><img class="footer-logo" src="./assets/logo.svg" alt="Blogr-logo"></a>
             </div>
-            <div class="column">
+            <div class="column add">
                 <p>Product</p>
                 <ul>
                     <li>Overview</li>
@@ -190,7 +189,7 @@
                     <img src="./assets/icon-arrow-dark.svg" alt="icon-arrow-light">
                     <img src="./assets/" alt="">
                 </a>
-                <div class="dropdown-content">
+                <div class="modal-dropdown">
                     <a href="#">Overview</a>
                     <a href="#">Pricing</a>
                     <a href="#">Marketplace</a>
@@ -202,7 +201,7 @@
                 <a class="dropdown-btn">Company
                     <img src="./assets/icon-arrow-dark.svg" alt="icon-arrow-light">
                 </a>
-                <div class="dropdown-content">
+                <div class="modal-dropdown">
                     <a href="#">About</a>
                     <a href="#">Team</a>
                     <a href="#">Blog</a>
@@ -213,7 +212,7 @@
                 <a class="dropdown-btn">Connect
                     <img src="./assets/icon-arrow-dark.svg" alt="">
                 </a>
-                <div class="dropdown-content">icon-arrow-light
+                <div class="modal-dropdown">
                     <a href="#">Contact</a>
                     <a href="#">Newsletter</a>
                     <a href="#">LinkedIn</a>

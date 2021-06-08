@@ -40,8 +40,7 @@
     padding-bottom: 8rem;
     margin-bottom: 3rem;
     border-radius: 0 0 0 70px;
-    background: linear-gradient(to right,hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-    /* background-image: url(../assets/bg-pattern-intro.svg); */
+    background-image: url(../assets/bg-pattern-intro.svg), linear-gradient(to right,hsl(13, 100%, 72%), hsl(353, 100%, 62%));
 }
 
 .hamburger-menu, .close-menu {
@@ -313,6 +312,7 @@ hamburger-menu, .hamburger-modal{
     margin-bottom: 1rem;
 }
 .details-details p {
+    width: 85%;
     color: var(--very-dark-gray-blue);
     line-height: 1.5rem;
     margin-bottom: 1rem;

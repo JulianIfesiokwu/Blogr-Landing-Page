@@ -48,9 +48,6 @@ window.onclick = function(event) {
 }
 
 
-
-
-
 // Event Listeners
 if(hamburgerMenu) {
     hamburgerMenu.addEventListener('click', showDropdown)

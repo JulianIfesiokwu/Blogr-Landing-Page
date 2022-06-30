@@ -15,6 +15,10 @@ Users should be able to:
 - Solution URL: [Add solution URL here](https://github.com/JulianIfesiokwu/Blogr-Landing-Page)
 - Live Site URL: [Add live site URL here](https://julianifesiokwu.github.io/Blogr-Landing-Page/)
 
+### Screenshot
+
+![](./assets/Blogr-Landing-Page.png)
+
 ## My process
 
 ### Built with
